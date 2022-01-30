@@ -3,6 +3,12 @@
 display : none;
 }
 
+form{
+  border-radius: #96D4D4 ;
+}
+.tenor-gif-embed{
+margin-left: 600px;
+}
 .active[data-tab-content]{
   display: block;
 }
@@ -12,8 +18,8 @@ body
   margin: 0;
   padding: 0;
   font-family: Tahoma, sans-sherrif;
-  color: rgb(20, 20, 20);
-  background-color: #faf9f9; 
+  color: rgb(196, 11, 156);
+  background-color: #f5bb3f; 
   text-align: center;
 }
 
@@ -48,12 +54,15 @@ header
 {
  font-family: Courier, serif;
  text-align: center;
- color: orange;
+ color: rgb(224, 66, 18);
  
  
 }
-h1.headertext{
+h3{
   text-align: center;
+  font-family: Tahoma, sans-sherrif;
+  color: rgb(196, 11, 156);
+
 }
 .text{
   text-align: center;
@@ -65,4 +74,20 @@ footer
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+ol{
+  text-align: left;
+  margin-left: 500px;
+  padding: 0;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin-left: 400px;
+}
+th, td {
+  background-color: #96D4D4;
+}
+figcaption{
+  font-style: italic;
 }
