@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 [data-tab-content]{
 display : none;
 }
@@ -63,70 +63,6 @@ footer
 {
   font-style: italic;
   text-align: center;
-=======
-[data-tab-content]{
-display : none;
-}
-
-.active[data-tab-content]{
-  display: block;
-}
-
-body
-{
-  margin: 0;
-  padding: 0;
-  font-family: Tahoma, sans-sherrif;
-  color: rgb(20, 20, 20);
-  background-color: #faf9f9; 
-  text-align: center;
-}
-
-.tabs {
-  display: flex;
-  justify-content: space-around;
-  list-style-type:none ;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid black ;
-}
-
-.tab{
-  cursor: pointer;
-  padding : 10px;
-}
-
-.tab.active{
-  background-color: #AAA;
-}
-
-.tab:hover{
-  background-color: #CCC;
-}
-
-.tab-content {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-header
-{
- font-family: Courier, serif;
- text-align: center;
- color: orange;
- 
- 
-}
-h1.headertext{
-  text-align: center;
-}
-.text{
-  text-align: center;
-}
-
-footer
-{
-  font-style: italic;
-  text-align: center;
->>>>>>> d19a3065f069fa326d57be63c0867fee62c5bf2c
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
