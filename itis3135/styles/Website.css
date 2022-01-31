@@ -10,7 +10,7 @@ a:link{
 }
 
 a:visited{
-  color:pink;
+  color:rgb(224, 66, 18);
   background-color: transparent;
   text-decoration: none;
 }
