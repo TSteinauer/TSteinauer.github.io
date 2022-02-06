@@ -44,6 +44,18 @@ body
   text-align: center;
 }
 
+.thebrand{
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-sherrif;
+  color: rgb(250, 246, 248);
+  background-color: #E95B5B; 
+  flood-color: #E95B5B;
+  text-align: left;
+}
+
+
+
 .tabs {
   display: flex;
   justify-content: space-around;

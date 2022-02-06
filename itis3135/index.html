@@ -7,7 +7,8 @@
     <meta name= "viewport" content= "width= device -width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content= "ie=edge">
     <script src ="scripts/Script.js" defer></script>
-    <link href = "styles/Website.css" rel = "stylesheet">
+    <link id = "theme" href = "styles/Website.css" rel = "stylesheet">
+    <link id = "theme" href = "styles/embbeded.css" rel = "stylesheet">
     
     <!--link to style sheet-->
   </head>
@@ -23,6 +24,9 @@
     <li data-tab-target = "#brand" class = "tab">Brand</li>
     <li data-tab-target = "#table" class = "tab">HTML Table</li>
     <li data-tab-target = "#form" class = "tab">HTML form</li>
+    <li data-tab-target = "#eval" class = "tab">Web Evaluation</li>
+    <li data-tab-target = "#crap" class = "tab"><a href = "tangerinesardines.com/bruvyoyo/cRA p.html">CRPPy WEBSOITE</a></li>
+    
   </ul>
   <div class = "tab-content">
     <div id = "home" data-tab-content class = "active">
@@ -94,13 +98,25 @@
         </main>
     </div>
 
-    <div id = "brand" data-tab-content>
-      <header>
-      <h1> Welcome Tangerine Sardines</h1>
-    </header>
-      <p> We all scream for... Sardines</p>
+    
+    <div class = "thebrand" id = "brand" data-tab-content >
+      <script>
+        document.getElementById("footer").style.color = "blue";
+        </script>
+    <h1> Tangerine Sardines</h1>
+      <img src = "images/sardine.png"
+      alt = "Sardine.png(325x325) (https://www.cleanpng.com/png-sardine-european-pilchard-fish-clip-art-hand-paint-495800/download-png.html)"
+      >
+      <h2>Here are some of the services we offer</h2>
+      <ul>
+        <li>Delivering garuteed fresh or fermented sardines to your doorstep</li>
+        <li>New experimental flavored sardines every year</li>
+        <li>Decorative sardine furniture and art</li>
+        <li>Libido stimulating sardine concoctions</li>
+        <li>Pretty much everything sardines!!!</li>
+      </ul>
     </div>
-
+  
     <div id = "table" data-tab-content>
       <header>
       <h1>HTML Table</h1>
@@ -315,6 +331,46 @@
       </form>
     </div>
 
+    <div id = "eval" data-tab-content >
+      <header >
+      <h1 style = "text-align: left;">Web Evaluation</h1>
+    </header>
+    <ul style = "text-align: left;">
+      <li>C ontrast</li>
+      <li>R epition</li>
+      <li>A lignment</li>
+      <li>P roximity</li>
+    </ul>
+    <h2 style = "text-align: left;"> 
+      Bad Website Review - <p style = "font-size: medium;"><a href="https://www.art.yale.edu/apply">Yale School of Art</a></p>
+      </h2>
+      <p style = "text-align: left;">This website serves as a hub of resources for students interested in joining the Yale school of art</p>
+      <p></p>
+      <ul style = "text-align: left;">
+        <li>CONTRAST: This website does have colors that allow the text to stand out from the backgroud, 
+          however there are so many different colors and contrast that it becomes distracting</li>
+        <li>REPITITION: There is little to no consistency in this website and has so many colors and fonts </li>
+        <li>ALIGNMENT: There is no visual connection in this web page and is skewed more to the left. A lot of visual vomit here</li>
+        <li>PROXIMITY: While spacing is present to attempt to seperate different content, 
+          a lot of similar content that should be grouped together tends to be spread apart from each other such as the zoom links</li>
+      </ul>
+      <p></p>
+
+      <h2 style = "text-align: left;"> 
+        Bad Website Review - <p style = "font-size: medium;"><a href="https://www.virgin.com/">Virgin Airlines</a></p>
+        </h2>
+        <p style = "text-align: left;">This website serves as a page for customers to access all content possible about Virgin Airlines</p>
+        <p></p>
+        <ul style = "text-align: left;">
+          <li>CONTRAST: This website has great contrast and is consistent with black and white with a tasteful amount of red that really makes the pages stand out while also be readable</li>
+          <li>REPITITION: The fonts, colors, and even the graphics are very consistent and there is a visible theme to the site. Overall the design remains consistent throughout. </li>
+          <li>ALIGNMENT: The sight is very symmetrical and contains a centered allignment between all it's elements.</li>
+          <li>PROXIMITY: All the contents of the website are grouped very nicely and allow for users to click on single squares to access different content which makes the sight extremely clean and organized</li>
+        </ul>
+
+
+    </div>
+
   </div>
 
 
@@ -324,7 +380,7 @@
     <main>
     </main>
     
-    <footer style = "text-align: center;">
+    <footer id="footer" style = "text-align: center;" >
       <nav>
         <a href="https://webpages.charlotte.edu/tsteinau/" target = "_blank" >Charlotte.edu</a>
         ||
