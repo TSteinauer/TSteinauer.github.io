@@ -26,6 +26,7 @@
     <li data-tab-target = "#form" class = "tab">HTML form</li>
     <li data-tab-target = "#eval" class = "tab">Web Evaluation</li>
     <li data-tab-target = "#crap" class = "tab"><a href = "tangerinesardines.com/bruvyoyo/cRA p.html">CRPPy WEBSOITE</a></li>
+    <li data-tab-target = "#js" class = "tab">firstscripts</li>
     
   </ul>
   <div class = "tab-content">
@@ -34,6 +35,7 @@
       <h1>Home</h1>
     </header>
     <p style = "text-align: center;"> Welcome to my ITIS3135 Homepage</p>
+    <input type="button" value = "Test Java" onclick="testJava();">
     </div>
 
     <div id = "intro" data-tab-content>
@@ -367,6 +369,116 @@
           <li>ALIGNMENT: The sight is very symmetrical and contains a centered allignment between all it's elements.</li>
           <li>PROXIMITY: All the contents of the website are grouped very nicely and allow for users to click on single squares to access different content which makes the sight extremely clean and organized</li>
         </ul>
+
+
+    </div>
+    <div id = js  data-tab-content >
+      <h3>
+        <span id = "date"></span>
+      </h3>
+      <form id ="form" onsubmit="return false;">
+        <p>Insert Full Name here:<input type = "text" id = "fname" name = "name"  placeholder="ex. John Smith"> </p>
+        <p> How're you feeling?:<input type = "text" id = "feeling" name = "feeling"  placeholder="ex. Depressed"> </p>
+        <input type = "submit" value="Submit" onclick="myFunction();">
+        <br><br>
+        <p>Click to tell us about your favorite pickled food <input type = "button" value = "Favorite Pickle" onclick="pickle();"></p>
+        <p>Search for your Pickle <input type = "button" value = "Search" onclick="search();"></p>
+        <p>Click to Calculate your pickle cost w/ tax <input type = "button" value = "Pickle Cost" onclick="cost();"></p>
+        <p>Due to national change shortage we have elected to remove any change owed if you pay with your card. <input type = "button" value = "Click if paying with card" onclick="newCost();"></p>
+        <p>If you have time please fill out a survey <input type = "button" value = "Survey" onclick="survey();"></p>
+      </form>
+     
+       
+        
+      
+     
+
+        
+      <script>
+        var days = ['Sunday', 'Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December' ]
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+        var day = days[today.getDay()];
+        var date =", " +  today.getDate() + " " + (months[today.getMonth()]) + ", " + (today.getYear() + 1900);
+        var cdate = document.getElementById("date").value = (time) + ' ' + (day) + (date);
+        document.write("Today Is : " + cdate);
+
+       // var fnames = document.getElementById("fname").value;
+       // var feelings = document.getElementById("feeling").value;
+        function myFunction()
+        {
+        alert( "The Tangerine Sardines Welcomes you " + fname.value + "!" + " we're glad you're feeling " + feeling.value );
+        }
+
+        function pickle()
+        {
+          var userInput = prompt("Whats your favorite pickled food", "ex.Pickles");
+          alert("you said you liked pickled " + userInput + "'s' ?");
+          alert("we actually have pickled " + userInput + "'s!")
+        }
+
+        function numGen(max)
+        {
+          return Math.floor(Math.random() * max);
+        }
+
+        function search()
+        {
+          var pSearch = prompt("insert the pickle you're looking for below", "ex. pickled mango's")
+          var cost = numGen(50.55);
+          var stock = numGen(20);
+          alert("We have " + stock + " of the " + pSearch + " in stock. They cost " + cost + "$ each");
+        }
+
+        function cost()
+        {
+          var pickleItem1 = prompt("Since we're limited on suppiles we can only allow customers to buy a maximum of 5 pickled items each. PLease insert the cost of your first pickle", "ex. 10.00");
+          pickleItem1 = parseFloat(pickleItem1);
+          var pickleItem2 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 1", "ex. 0.00");
+          pickleItem2 = parseFloat(pickleItem2);
+          var pickleItem3 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 2", "ex. 0.00");
+          pickleItem3 = parseFloat(pickleItem3);
+          var pickleItem4 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 3", "ex. 0.00");
+          pickleItem4 = parseFloat(pickleItem4);
+          var pickleItem5 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 4", "ex. 0.00");
+          pickleItem5 = parseFloat(pickleItem5);
+          var pickleSum = (pickleItem1 + pickleItem2 + pickleItem3 + pickleItem4 + pickleItem5);
+          let tax = 1.07;
+          pickleSum = parseFloat(pickleSum * tax);
+          alert("your total cost with tax is: " + pickleSum + "$");
+
+        }
+        function newCost()
+        {
+          var pickleItem1 = prompt("Since we're limited on suppiles we can only allow customers to buy a maximum of 5 pickled items each. PLease insert the cost of your first pickle", "ex. 10.00");
+          pickleItem1 = parseFloat(pickleItem1);
+          var pickleItem2 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 1", "ex. 0.00");
+          pickleItem2 = parseFloat(pickleItem2);
+          var pickleItem3 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 2", "ex. 0.00");
+          pickleItem3 = parseFloat(pickleItem3);
+          var pickleItem4 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 3", "ex. 0.00");
+          pickleItem4 = parseFloat(pickleItem4);
+          var pickleItem5 = prompt("insert the cost of your second pickle item or enter 0 if you wish to only buy 4", "ex. 0.00");
+          pickleItem5 = parseFloat(pickleItem5);
+          var pickleSum = (pickleItem1 + pickleItem2 + pickleItem3 + pickleItem4 + pickleItem5);
+          let tax = 1.07;
+          pickleSum = parseInt(pickleSum * tax);
+          alert("your total cost with tax is: " + pickleSum + "$");
+
+        }
+        function survey()
+        {
+          var surveyQ1 = prompt("Were you ablefind your pickled food item? If you were not able to please name the pickle item", "eg. Yes or No (the pickled item)")
+          var surveyQ2 = prompt("Rate our service quality 1- 10, 1 being the lowest", 10);
+          var surveyQ3 = prompt("Do you enjoy your pickles??", "eg. Yes or No");
+          var surveyQ2 = prompt("Please write any additional feedback");
+          alert("Thank you for taking our survey!!!, We will use your input to improve our business. We will apply a 10% cupon on your next Purchase")
+        
+        }
+
+      </script>
+      
 
 
     </div>
