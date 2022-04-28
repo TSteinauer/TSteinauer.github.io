@@ -1,0 +1,433 @@
+@import url('../css/fonts.css');
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*gradient*/
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --pink:linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    --lightpurp:radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(212,178,211,1) 79%);
+    --cucumber:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    --lilac:linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+
+
+
+
+    /*colors*/
+    --text-blue:rgb(0, 110, 255); 
+    --text-gray:#3f4954;
+    --text-lightgray:#ADB5BD;
+    --text-night:#023E8A;
+    --text-black:black;
+    --text-white:white;
+    --text-green:#144552;
+    --text-orange:#eb5e28;
+
+    
+
+
+    /*font fam*/
+    --Anek:'Anek';
+    --Oxygen:'Oxygen';
+    --Raleway:'Raleway';
+    --RobotoMono:'Roboto Mono';
+    --RobotoSlab:'Roboto Slab';
+    --Abel:'Abel';
+    --Bebas:'Bebas';
+}
+/*````````````` Global classes ```````````````*/
+    a{
+        text-decoration: none;
+    }
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    ul{
+        list-style-type:none;
+    }
+
+    h1{
+        font-family: var(--Raleway);
+        font-size: 2.8rem;
+    }
+
+    h3{
+        font-family: var(--Abel);
+        font-size: 1.3rem;
+    }
+
+    button.bttn{
+        border:none;
+        border-radius: 2rem;
+        padding:1rem 3rem;
+        font-size: 1rem;
+        font-family:var(--Bebas);
+        cursor: pointer;
+    }
+    button.bttn-blog{
+        border:none;
+        border-radius: 2rem;
+        padding:.7rem 2rem;
+        font-size: 1rem;
+        font-family:var(--Bebas);
+        cursor: pointer;
+
+    }
+
+    span{
+        font-family: var(--Abel);
+
+    }
+
+    .container{
+        margin:0 5vw;
+
+    }
+
+    .text-gray{
+        color:var(--text-gray);
+    }
+
+    p{
+        font-family: var(--RobotoSlab);
+        color: var(--text-gray);
+    }
+
+    #more{display: none;}
+    #more2{display: none;}
+
+    #comments{display:none;}
+
+
+/*````````````` closing Global classes ```````````````*/
+
+
+
+
+/*`````````````` navbar ``````````````*/
+
+.nav{
+    background-color: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width:90%;
+    cursor:pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color:var(--text-gray)
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    font-size: 1.6rem 1rem;
+    padding: 1.1rem;
+    position: relative;
+    font-family: var(--Raleway);
+    font-size: 1rem;
+}
+.nav .nav-items .nav-link a{
+    color:var(--text-gray);
+}
+.nav .nav-items .nav-link:hover{
+    background-color: var(--text-night);
+}
+
+.nav .nav-items .nav-link:hover a{
+   color: var(--text-white);
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family:var(--Anek);
+    color: #eb5e28;
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding:1.4rem;
+}
+.nav .social i{
+    padding:0 .2rem;
+    color:var(--text-blue)
+}
+.nav .social i:hover{
+    color:var(--text-lightgray);
+}
+
+/*``````````````closing navbar ``````````````*/
+
+/*------------------ MAIN ----------------*/
+
+
+/*------------- SITE TITLE ----------------*/
+main .site-title{
+    background:url('../Tpics/noodle-g455dcf2f1_1920.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top:6.4rem;
+    text-align: center;
+    color: var(--text-white);
+
+
+}
+main .site-title h1,h3{
+    margin: .3rem;
+
+}
+
+main .site-title .bttn{
+    margin: 1.8rem;
+    background:var(--sky);
+
+}
+
+main .site-title .bttn:hover{
+    background: transparent;
+    border:1px solid var(--text-white);
+    color:var(--text-white);
+
+
+}
+
+
+
+/*------------- SITE TITLE ----------------*/
+
+/*--------------blog carousel--------------*/
+main .blog{
+    background:url('../Tpics/abstract01.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 90vh;
+    width: 100%;
+    background-size: 65%;
+    
+}
+
+main .blog .blogpost{
+    padding-top: 6rem;
+
+}
+
+main .blog .blogpost .blogcon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin:2rem 4rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blogcon .blog-title{
+    padding:2rem 0;
+}
+
+main .blogcon .bttn-blog{
+    background:var(--sky);
+    margin:.5rem;
+
+}
+
+main .blogcon span{
+    display:block;
+
+}
+
+/*--------------blog carousel--------------*/
+
+
+/*--------------- site content ------------*/
+main .site-content{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width:100%;
+    margin-bottom:3rem;
+}
+main  .site-content .post-content > .post-image,.post-title{
+    padding: 1rem 2rem;
+    position:relative;
+}
+
+main  .site-content .post-content > .post-image .post-info{
+    background:var(--sky);
+    padding:1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 15vw;
+    border-radius: 3rem;
+} 
+
+main .site-content .post-content > .post-image> div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: 1s;
+}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin:0 .5rem;
+}
+
+main .post-content .post-title a{
+    font-family: var(--Bebas);
+    font-size: 1.5rem;
+    color:var(--text-orange);
+}
+
+main .post-content .post-title a:hover{
+    color:var(--text-white);
+    background-color: var(--text-orange);
+}
+
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content .post-title .post-bttn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+
+}
+
+main .site-content .post-content > .post-comments .comment-box{
+    top: 50%;
+    left: 3%;
+    width:30rem;
+    height: 500px;
+    position: relative;
+    border: 2px solid black;
+    background: var(--cucumber);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    
+}
+main .site-content .post-content > .post-comments .comment-box h2{
+    margin-left: 9rem;
+    font-family: var(--Raleway);
+    
+}
+
+main .site-content .post-content > .post-comments .comment-box input{
+    width:300px;
+    height: 30px;
+    padding: 0 4rem;
+    margin-bottom: 15px;
+    border-radius: 1rem;
+    border:3rem solid var(--sky);
+    background: var(--lilac);
+    text-align: center;
+    
+}
+main .site-content .post-content > .post-comments .comment-box ::-webkit-input-placeholder{
+    text-align: center;
+    font-family: var(--Raleway);
+   
+}
+main .site-content .post-content > .post-comments .comment-box ::-webkit-textarea-placeholder{
+    text-align: center;
+    font-family: var(--Raleway);
+    
+}
+
+main .site-content .post-content > .post-comments .comment-box textarea{
+    width:300px;
+    height: 60px;
+    padding: 0 4rem;
+    margin-bottom: 15px;
+    border-radius: 1.5rem;
+    border:3rem solid var(--sky);
+    background: var(--lilac);
+    text-align: center;
+    resize: none;
+    
+}
+
+main .site-content .post-content > .post-comments .comment-box button{
+    width:425px;
+    height: 45px;
+    padding: 0 2rem;
+    margin-bottom: 15px;
+    border-radius: 1.5rem;
+    border:3rem solid var(--sky);
+    background: var(--lightpurp);
+    text-align: center;
+    font-family: var(--Raleway);
+    color: var(--text-gray);
+}
+
+
+main .site-content .post-content > .post-comments .comment-box .bttn:hover{
+    background: transparent;
+    border:1px solid var(--text-white);
+    color:var(--text-white);
+}
+
+
+
+/*---------x------ site content -------x----*/
+
+/*------------CLOSING MAIN ----------------*/
+
+/* ------------If viewport is <= 750px --------------*/
+@media only screen and (max-width:750px){
+    .nav .menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+/* ------------ closing If viewport is <= 750px --------------*/

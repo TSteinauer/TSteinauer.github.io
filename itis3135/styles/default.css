@@ -1,0 +1,104 @@
+a:visited{
+    color:rgb(224, 66, 18);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:link
+  {
+      color:red;
+  }
+  a:hover{
+    color:red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active{
+    color:yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  form{
+    border-radius: #96D4D4 ;
+  }
+  .tenor-gif-embed{
+  margin-left: 450px;
+  }
+  .active[data-tab-content]{
+    display: block;
+  }
+  
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-sherrif;
+  color: rgb(196, 11, 156);
+  background-color: #f5bb3f; 
+  margin-left: 150px;
+  margin-right: 150px;
+}
+header
+{
+ font-family: Courier, serif;
+ text-align: center;
+ color: rgb(224, 66, 18);
+}
+h3{
+    text-align: center;
+    font-family: Tahoma, sans-sherrif;
+    color: rgb(196, 11, 156);
+  
+  }
+  footer
+{
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.center
+{
+    text-align: center;
+    list-style-position: inside;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: left;
+    margin:0px auto;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }
+  figcaption{
+    font-style: italic;
+  }
+  .text{
+    text-align: center;
+  }
+  
+  .left
+  {
+      text-align: left;
+  }
+  header
+  {
+      border-style: dotted;
+      border-width: 3px;
+      border-left-width: 3px;
+      border-right-width: 3px;
+      border-color: red;
+      margin-bottom: 25px;
+
+  }
+  nav
+  {
+      text-align: center;
+  }
+
+ 

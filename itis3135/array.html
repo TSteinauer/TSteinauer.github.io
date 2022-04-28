@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name= "viewport" content= "width= device -width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content= "ie=edge">
-    <script src = "scripts/include.js" defer></script>
     <link id = "theme" href = "styles/default.css" rel = "stylesheet">
-    <title>Thomas's ITIS3135 HomePage</title>
+    <script src= "scripts/include.js" defer></script>
+    <title>Thomas's ITIS3135 Contract</title>
 </head>
 <body>
     <div data-include = "header.html"></div>
@@ -32,22 +32,43 @@
     <a href = "bruvyoyo.com/cRA p.html">CRAP</a>
     🐠
     <a href = "firstJava.html">First JS</a>
-    🐠
-    <a href = "polygon.html">Polygon</a>
-    🐠
-    <a href = "calculator.html">Calculator</a>
 
 </nav>
 <br> -->
 <main>
-<h2>Home Page</h2>
-<p>Hey fellow sardines Welcome to my Homepage</p>
+<h2>Arrays</h2>
+<div class = "center">
+<label for = "selectEmployee">Select an employee</label>
+<input id = "selectEmployee" type = "text" placeholder="ie. Tommy">
+<label for = "employeeSalary">Add salary</label>
+<input id = "employeeSalary" type = "text" placeholder="in $ ie. 4000">
+</div>
+<div class>
+<button type = "addSal" onclick="addSalary()">Add Salary</button>
+<br><br>
+<button type = "dispRes" onclick="displayResults()">Display Results</button>
+<br><br>
+<button type = "dispSal" onclick="displaySalary()">Display Salary</button>
+</div>
+<h3 id = "results">
+
+</h3>
+
+
+<table id = "results_table">
+</table>
+
+
+<h3 id = "pushedValues">
+    
+</h3>
+
 
 </main>
 <br>
 <div data-include = "footer.html"></div>
 
-<!--<footer id="footer" style = "text-align: center;" >
+<!-- <footer id="footer" style = "text-align: center;" >
     <nav>
       <a href="https://webpages.charlotte.edu/tsteinau/" target = "_blank" >Charlotte.edu</a>
       ||
@@ -66,7 +87,7 @@
       <p>Designed by </p> <a href = "tangerinesardines.com/index.html" target = "_blank">TangerineSardines &copy 2022</a> 
     </nav>
     </footer> -->
-
+<script src = "scripts/arrays.js" defer></script>
 </body>
 
 
