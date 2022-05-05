@@ -1,14 +1,7 @@
-<?php
-    date_default_timezone_set('America/New_York');
-
-?>
-
-
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name= "viewport" content= "width= device -width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content= "ie=edge">
     <title>Food Blog</title>
@@ -173,17 +166,17 @@
                          </div>
                          <!------post comments----->
                         <div class="post-comments" id="comments">
-
-                        <?php
-                            echo "<form>
-                                <h2>Comments</h2>
-                                <input type = 'hidden' name = 'uid' value = 'Anonymous'>
-                                <input type='hidden' name ='date'  value='".date('Y-m-d H:i:s')."'>
-                                <textarea name ='comment' placeholder='Type here'></textarea>
-                                <button name='submit'  class='bttn' type='submit'>Submit Comment</button>
-                            </form>";
                             
-                            ?>
+                            <form class="comment-box" id="commentbox">
+                                <h2>Comments</h2>
+                                <input type = "text" id ="name" name = "username" placeholder="Enter username">
+                                <input id="date" style="color: gray; font-family: var(--Raleway);" type = "date" name = "date"  placeholder="dd/mm/yy">
+                                <textarea id="body-text" name ="comment" placeholder="Type here"></textarea>
+                                <button  class="bttn" type="data" onclick="saveComment()">Submit Comment</button>
+                                <button  class="bttn" type = "data" onclick = "clearComment()">Delete Comment</button>
+
+                                <div class="comment-list" id="cmtlist"><h3>comments</h3></div>
+                            </form>
                         </div>
                         <!--X--post comments--X-->
                         </div>

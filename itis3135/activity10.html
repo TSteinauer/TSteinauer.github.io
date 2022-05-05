@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content= "width= device -width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content= "ie=edge">
+        <script src = "scripts/include.js" defer></script>
+        <script src="scripts/jquery-3.6.0.min.js"></script>
+        <link id = "theme" href = "styles/default.css" rel = "stylesheet">
+        <title>Thomas's ITIS3135 ImageSwap</title>
+    </head>
+    <body>
+        
+        <div data-include = "header.html"></div>
+        <main>
+       <h2>ImageSwap</h2>
+       <br>
+       <h2>Thumbnails</h2>
+            <div class="thumb-container row">
+                <div class="column"> <a id="click1" class="aimg" href="#"> <img id ="i1" class="thumb-img" src="images/activity10_thumbnails/h1.jpg"> </a> </div>
+                <div class="column"> <a id="click2" class="aimg" href="#"> <img id ="i2" class="thumb-img" src="images/activity10_thumbnails/h2.jpg"> </a> </div>
+                <div class="column"> <a id="click3" class="aimg" href="#"> <img id ="i3" class="thumb-img" src="images/activity10_thumbnails/h3.jpg"> </a> </div>
+                <div class="column"> <a id="click4" class="aimg" href="#"> <img id ="i4" class="thumb-img" src="images/activity10_thumbnails/h4.jpg"> </a> </div>
+                <div class="column"> <a id="click5" class="aimg" href="#"> <img id ="i5" class="thumb-img" src="images/activity10_thumbnails/h5.jpg"> </a> </div>
+                <div class="column"> <a id="click6" class="aimg" href="s"> <img id ="i6" class="thumb-img" src="images/activity10_thumbnails/h6.jpg">  </a> </div>
+                <div class="column"> <button onclick="reload()">Reset Animation</button> </div>
+            </div>
+        <h2>Images</h2>
+        <div class="img-container">
+            <div class="slides">
+
+            <div class="slide first" id="img1">
+                <img src="images/activity10_images/t1.jpg" alt="image1" class="img-slide" >
+            </div>
+            <div class="slide" id="img2">
+                <img src="images/activity10_images/t2.jpg" alt="image2" class="img-slide" >
+            </div>
+            <div class="slide" id="img3">
+                <img src="images/activity10_images/t3.jpg" alt="image3" class="img-slide" >
+            </div>
+            <div class="slide" id="img4">
+                <img src="images/activity10_images/t4.jpg" alt="image4" class="img-slide" >
+            </div>
+            <div class="slide" id="img5">
+                <img src="images/activity10_images/t5.jpg" alt="image5" class="img-slide" >
+            </div>
+            <div class="slide" id="img6">
+                <img src="images/activity10_images/t6.jpg" alt="image6" class="img-slide" >
+            </div>
+
+            </div>
+        </div>
+
+
+
+        <p>I used this <a href="https://stackoverflow.com/questions/11660710/css-transition-fade-in">Stack Overflow</a> solution to get an undertstanding of getting the images to fade in</p>
+        <p>This tutorial however did not use JS and so I had to translate the CSS he used to make the slider work into JS</p>
+        <p>The main difficulty was trying to turn the css into JS and also getting the animation to reset after each click</p>
+        <p>The JS is 100% mine and the formatting of the page and the css were not copy and pasted just referenced</p>
+        <p>I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
+
+        
+<p>I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.</p>
+
+        
+<p>I also understand that given the structure and content of this class its possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where i have properly given credit (i.e. external libraries) and never from my classmates</p>
+        
+<p>Signed: Thomas J. Steinauer, 05/2/2022</p>
+    </main>
+
+        <div data-include = "footer.html"></div>
+        <script src = "scripts/activity10.js" ></script>
+
+       
+    </body>
+</html>
